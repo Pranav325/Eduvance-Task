@@ -37,7 +37,7 @@ function FileUpload({ onAnalysisComplete }) {
       const fileContent = reader.result;
 
       try {
-        const res = await fetch('LAMBDA_URL', { 
+        const res = await fetch(LAMBDA_URL, { 
           method: 'POST',
           headers: {
             'Content-Type': 'text/csv',
