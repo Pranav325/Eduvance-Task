@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+const LAMBDA_URL = process.env.REACT_APP_LAMBDA_URL;
 function FileUpload({ onAnalysisComplete }) {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
@@ -37,7 +37,7 @@ function FileUpload({ onAnalysisComplete }) {
       const fileContent = reader.result;
 
       try {
-        const res = await fetch('LAMDA_API_ENDPOINT', { 
+        const res = await fetch('LAMBDA_URL', { 
           method: 'POST',
           headers: {
             'Content-Type': 'text/csv',
