@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+
+h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 2px dashed #c1c1c1;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 340px;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload:hover {
+  background-color: #f9f9ff;
+  border-color: #b0b0b0;
+}
+
+
+.file-upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  margin: 10px 0;
+}
+
+
+.file-info {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+
+.upload-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.upload-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1em;
+}
+.status-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #d32f2f;
+}
+
+
+.dataset-analysis {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.dataset-analysis h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+
+.dataset-analysis p,
+.dataset-analysis ul {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.dataset-analysis p {
+  font-weight: bold;
+  color: #444;
+}
+
+
+.dataset-analysis ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+.dataset-analysis ul li {
+  padding: 8px 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+
+.dataset-analysis ul li:last-child {
+  border-bottom: none;
+}
+
+
+.dataset-analysis .analysis-section {
+  margin-bottom: 20px;
+}
+
+.dataset-analysis .analysis-section h3 {
+  color: #007bff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.dataset-analysis .analysis-section ul li {
+  padding: 5px 0;
+  font-size: 0.95em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataset-analysis .analysis-section ul li span {
+  font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+  .dataset-analysis,
+  .file-upload {
+      width: 100%;
+      padding: 15px;
+  }
+}
